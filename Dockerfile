@@ -1,4 +1,4 @@
-FROM python:alpine3.19
+FROM python
 
 # Set the working directory
 WORKDIR .
