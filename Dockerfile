@@ -1,4 +1,4 @@
-FROM python
+FROM pytorch/pytorch:latest
 
 # Set the working directory
 WORKDIR .
