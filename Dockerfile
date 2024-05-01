@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:latest
+FROM python:alpine3.19
 
 # Set the working directory
 WORKDIR .
@@ -8,5 +8,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-# Set the default command to run when the container starts
-CMD ["python", "app.py"]
+CMD ["gunicorn"  , "-b", "0.0.0.0:80", "app:app"]
