@@ -3,7 +3,7 @@ from io import StringIO
 
 from flask import Flask, jsonify, request, session, send_file
 
-from backend.model.create_image import DiffusionModel
+from model.create_image import DiffusionModel
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
