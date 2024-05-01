@@ -2,9 +2,9 @@ import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
 
-from nn import timestep_embedding
-from unet import UNetModel
-from transformer import LayerNorm, Transformer, convert_module_to_f16
+from model.nn import timestep_embedding
+from model.unet import UNetModel
+from model.transformer import LayerNorm, Transformer, convert_module_to_f16
 
 
 class Text2ImUNet(UNetModel):

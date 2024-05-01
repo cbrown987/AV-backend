@@ -7,7 +7,7 @@ Simplified from: https://github.com/openai/guided-diffusion/blob/main/guided_dif
 import numpy as np
 import torch as th
 
-from gaussian_diffusion import GaussianDiffusion
+from model.gaussian_diffusion import GaussianDiffusion
 
 
 def space_timesteps(num_timesteps, section_counts):

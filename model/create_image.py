@@ -2,8 +2,8 @@ from PIL import Image
 from IPython.display import display
 import torch as th
 
-from download import load_checkpoint
-from create_model import (
+from model.download import load_checkpoint
+from model.create_model import (
     create_model_and_diffusion,
     model_and_diffusion_defaults,
     model_and_diffusion_defaults_upsampler

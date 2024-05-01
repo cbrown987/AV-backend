@@ -1,12 +1,12 @@
-from gaussian_diffusion import get_named_beta_schedule
-from respace import SpacedDiffusion, space_timesteps
-from model import (
+from model.gaussian_diffusion import get_named_beta_schedule
+from model.respace import SpacedDiffusion, space_timesteps
+from model.model import (
     InpaintText2ImUNet,
     SuperResInpaintText2ImUnet,
     SuperResText2ImUNet,
     Text2ImUNet,
 )
-from tokenizer.bpe import get_encoder
+from model.tokenizer.bpe import get_encoder
 
 
 def model_and_diffusion_defaults():
